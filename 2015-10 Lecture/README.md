@@ -35,7 +35,7 @@ The following is a short list with good introductions to different aspects of de
  * *6 Feedforward Deep Networks* - Read on feedforward networks, the most simple type of neural networks
 * From the [2009 Yoshua Bengio Book](http://www.iro.umontreal.ca/~bengioy/papers/ftml_book.pdf):
  * *1 Introduction* - Good introduction into the terminology and the basic concept of deep learning
- * *2 Theoretical Advantages of Deep Architectures * - In case you are interested why deep architectures are better than shallow
+ * *2 Theoretical Advantages of Deep Architectures* - In case you are interested why deep architectures are better than shallow
 
 ## Lecture 2 - Introduction to Theano and Lasagne 
 *Monday, 12th October, Room B002*
