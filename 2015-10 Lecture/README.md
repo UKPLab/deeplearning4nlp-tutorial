@@ -27,15 +27,16 @@ The following is a short list with good introductions to different aspects of de
 * Shallow vs deep neural networks
 
 **Recommended Readings**
+* From the [2009 Yoshua Bengio Book](http://www.iro.umontreal.ca/~bengioy/papers/ftml_book.pdf):
+ * *1 Introduction* - Good introduction into the terminology and the basic concept of deep learning
+ * *2 Theoretical Advantages of Deep Architectures* - In case you are interested why deep architectures are better than shallow
 * [Chapter 1 - Using neural nets to recognize handwritten digits](http://neuralnetworksanddeeplearning.com/chap1.html)
 * [Chapter 2 - How the backpropagation algorithm works](http://neuralnetworksanddeeplearning.com/chap2.html)
 * From the [2015 Yoshua Bengio Book](http://www.iro.umontreal.ca/~bengioy/dlbook/):
  * *1 Introduction* - if you are interested in the historical development of neural networks
  * *Part I: Applied Math and Machine Learning Basics* - As a refresher for linear algebra and machine learning basics (if needed)
  * *6 Feedforward Deep Networks* - Read on feedforward networks, the most simple type of neural networks
-* From the [2009 Yoshua Bengio Book](http://www.iro.umontreal.ca/~bengioy/papers/ftml_book.pdf):
- * *1 Introduction* - Good introduction into the terminology and the basic concept of deep learning
- * *2 Theoretical Advantages of Deep Architectures* - In case you are interested why deep architectures are better than shallow
+
 
 ## Lecture 2 - Introduction to Theano and Lasagne 
 *Monday, 12th October, Room B002*
