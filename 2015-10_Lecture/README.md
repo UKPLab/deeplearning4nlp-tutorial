@@ -1,4 +1,6 @@
 # Deep Learning for NLP - Lecture October 2015
+**This site can be access by the URL: www.deeplearning4nlp.com**
+
 This GIT repository accompanies the [UKP](https://www.ukp.tu-darmstadt.de/ukp-home/) lecture on Deep Learning for Natural Language Processing.
 
 In contrast to other lectures, this lecture focuses on the **usage of deep learning methods**. As programming infrastructure we use Python in combination with [Theano](http://deeplearning.net/software/theano/) and [Lasagne](https://github.com/Lasagne/Lasagne).
