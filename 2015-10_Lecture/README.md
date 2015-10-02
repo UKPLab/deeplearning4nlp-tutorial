@@ -59,8 +59,12 @@ The following is a short list with good introductions to different aspects of de
 * Usage of Lasagne
 
 
-## Lecture 3 - Word Embeddings, Feed forward Networks and SENNA
+## Lecture 3 - Word Embeddings, Feed Forward Networks and SENNA
 *Monday, 19th October, 11am (German time zone), Room B002*
+
+**Practice-Task**:
+* **Task**: Implement a Named Entity Recognizer based on the SENNA Architecture
+* *A Python skeleton and a sample solution will be added to this git repository later*
 
 ## Lecture 4
 *Monday, 26th October, 11am (German time zone), Room B002*
