@@ -19,7 +19,7 @@ The following is a short list with good introductions to different aspects of de
 * 2015, Richard Socher, [CS224d: Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/syllabus.html)
 
 ## Lecture 1 - Introduction to Deep Learning 
-*Monday, 5th October, Room B002*
+*Monday, 5th October, 11am (German time zone), Room B002*
 
 **Lecture-Content:**
 * Overview of the lecture
@@ -41,7 +41,7 @@ The following is a short list with good introductions to different aspects of de
 
 
 ## Lecture 2 - Introduction to Theano and Lasagne 
-*Monday, 12th October, Room B002*
+*Monday, 12th October, 11am (German time zone), Room B002*
 
 **Preparation before class:**
 * Install Python (2.7), NumPy, SciPy and Theano. ([Installing Theano for Ubuntu](http://deeplearning.net/software/theano/install_ubuntu.html))
@@ -59,5 +59,14 @@ The following is a short list with good introductions to different aspects of de
 * Usage of Lasagne
 
 
+## Lecture 3 - Word Embeddings, Feed forward Networks and SENNA
+*Monday, 19th October, 11am (German time zone), Room B002*
 
+## Lecture 4
+*Monday, 26th October, 11am (German time zone), Room B002*
 
+## Lecture 5
+*Monday, 2nd November, 11am (German time zone), Room B002*
+
+## Lecture 6
+*Monday, 9h November, 11am (German time zone), Room B002*
