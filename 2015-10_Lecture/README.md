@@ -9,7 +9,7 @@ This lecture is structured into 6 parts. Each parts contains some recommended re
 
 At the end of the lecture you should be able to understand the most important aspect of deep learning for NLP and be able to programm and train your own deep neural networks.
 
-In case of questions, feel free to approach [Nils Reimers](https://www.ukp.tu-darmstadt.de/people/doctoral-researchers/nils-reimers/) in case of questions.
+In case of questions, feel free to approach [Nils Reimers](https://www.ukp.tu-darmstadt.de/people/doctoral-researchers/nils-reimers/).
 
 ## Recommended Readings on Deep Learning
 The following is a short list with good introductions to different aspects of deep learning.
