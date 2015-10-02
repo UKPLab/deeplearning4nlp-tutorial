@@ -21,7 +21,7 @@ The following is a short list with good introductions to different aspects of de
 ## Lecture 1 - Introduction to Deep Learning 
 *Monday, 5th October, 11am (German time zone), Room B002*
 
-**Stream:** http://www.youtube.com/watch?v=gV40DObLEM
+**Stream:** http://www.youtube.com/watch?v=gV40DObLEgM
 
 **Slides:** [pdf](Lecture1/2015-10-05_Deep_Learning_Intro.pdf)
 
