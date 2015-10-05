@@ -1,7 +1,7 @@
 # Deep Learning for NLP - Lecture October 2015
 **This site can be access by the URL: www.deeplearning4nlp.com**
 
-**>> Link for the 11am video stream of todays lecture: http://youtu.be/PZmf0phR7mk (NEW LINK)!<<**
+**>> There were some technical issues with the stream. A new recording will be made available soon. In future the recording of the lecture will be uploaded after the lecture (no live stream, sorry).<<**
 
 
 This GIT repository accompanies the [UKP](https://www.ukp.tu-darmstadt.de/ukp-home/) lecture on Deep Learning for Natural Language Processing.
@@ -24,7 +24,7 @@ The following is a short list with good introductions to different aspects of de
 ## Lecture 1 - Introduction to Deep Learning 
 *Monday, 5th October, 11am (German time zone), Room B002*
 
-**Stream:** http://youtu.be/PZmf0phR7mk
+**Stream:** *link will follow*
 
 **Slides:** [pdf](Lecture1/2015-10-05_Deep_Learning_Intro.pdf)
 
