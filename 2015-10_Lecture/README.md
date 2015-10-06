@@ -26,8 +26,7 @@ The following is a short list with good introductions to different aspects of de
 
 **Video:** https://youtu.be/AmG4jzmBZ88
 
-**Slides:** [pdf](Lecture1/2015-10-05_Deep_Learning_Intro.pdf)
-
+**Slides:** [pdf](https://github.com/nreimers/deeplearning4nlp-tutorial/raw/master/2015-10_Lecture/Lecture1/2015-10-05_Deep_Learning_Intro.pdf)
 
 **Lecture-Content:**
 * Overview of the lecture
