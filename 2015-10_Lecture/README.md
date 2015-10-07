@@ -50,6 +50,8 @@ The following is a short list with good introductions to different aspects of de
 ## Lecture 2 - Introduction to Theano and Lasagne 
 *Monday, 12th October, 11am (German time zone), Room B002*
 
+**Slides:** [pdf](https://github.com/nreimers/deeplearning4nlp-tutorial/raw/master/2015-10_Lecture/Lecture2/2015-10-12_Theano_Introduction.pdf)
+
 **Preparation before class:**
 * Install Python (2.7), NumPy, SciPy and Theano. ([Installing Theano for Ubuntu](http://deeplearning.net/software/theano/install_ubuntu.html))
 * Install [Lasagne](https://github.com/Lasagne/Lasagne)
@@ -59,18 +61,23 @@ The following is a short list with good introductions to different aspects of de
 * **Hint:** You can install Python, Theano etc. on you local desktop machine and log into it via SSH or via [IPython Notebook](http://cs231n.github.io/ipython-tutorial/) during class
 
 
-**Lecture-Content:**
-* Introduction to Theano (knowledge of Python and Numpy is assumed)
-* Computation graphs
-* Using Theano to classify hand written digits (MNIST dataset)
-* Usage of Lasagne
 
-
-## Lecture 3 - Word Embeddings, Feed Forward Networks and SENNA
+## Lecture 3 - Word Embeddings and Deep Feed Forward Networks
 *Monday, 19th October, 11am (German time zone), Room B002*
 
+**Preparation before class:**
+* Know the theory of word embeddings & word2vec
+ * Watch this video:
+ * The theory will **not** be introduced in class. But if you have questions regarding the theory / the videos, please ask them. We will discuss your questions / the videos in the beginning of Lecture 3 
+* Get familiar with Theano and Lasagne, do the exercises from Lecture 2
+ 
+**Lecture content:**
+* Discussion of the theory of word2vec (have your questions prepared :))
+* Usage of word2vec & word2vec hacks
+* Designing a deep neural network architecture for sequence tagging (e.g. POS, NER, Chunking)
+
 **Practice-Task**:
-* **Task**: Implement a Named Entity Recognizer based on the SENNA Architecture
+* **Task**: Implement a Named Entity Recognizer
 * *A Python skeleton and a sample solution will be added to this git repository later*
 
 ## Lecture 4
