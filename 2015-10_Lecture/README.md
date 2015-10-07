@@ -67,11 +67,11 @@ The following is a short list with good introductions to different aspects of de
 * Know the theory of word embeddings & word2vec
  * Watch from the [CS224d Stanford Class](http://cs224d.stanford.edu/syllabus.html) the following videos:
   * [Lecture 2](https://www.youtube.com/watch?v=T8tQZChniMk)
-   * 00:00 - 21:30 - Introduction to word vectors via SVD 
-   * 21:30 - 28:00 - Hacks for word vector learning 
-   * 28:00 - 01:01:00- Problems with SVD, Introduction to word2vec (please watch at least this part)
-    * From minute 38 to 53 he derives the optimization function of word2vec, feel free to skip this part
-   * 1:01:00 - 1:13:00 - LSA vs. Skip-Gram vs. CBOW. Introduction of Glove 
+    * 00:00 - 21:30 - Introduction to word vectors via SVD 
+    * 21:30 - 28:00 - Hacks for word vector learning 
+    * 28:00 - 01:01:00- Problems with SVD, Introduction to word2vec (please watch at least this part)
+     * From minute 38 to 53 he derives the optimization function of word2vec, feel free to skip this part
+    * 1:01:00 - 1:13:00 - LSA vs. Skip-Gram vs. CBOW. Introduction of Glove 
   * [Lecture 3](https://www.youtube.com/watch?v=T1j2Q9_FgTM) 
    * 00:00 - 13:00 - How is word2vec trained, how are the word embeddings updated (please watch at least this part)
    * 13:00 - 20:00 - What is Skip-Gram, Negative Sampeling, CBOW (please watch at least this part)
