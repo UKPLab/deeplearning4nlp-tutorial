@@ -50,8 +50,6 @@ The following is a short list with good introductions to different aspects of de
 ## Lecture 2 - Introduction to Theano and Lasagne 
 *Monday, 12th October, 11am (German time zone), Room B002*
 
-**Slides:** [pdf](https://github.com/nreimers/deeplearning4nlp-tutorial/raw/master/2015-10_Lecture/Lecture2/2015-10-12_Theano_Introduction.pdf)
-
 **Preparation before class:**
 * Install Python (2.7), NumPy, SciPy and Theano. ([Installing Theano for Ubuntu](http://deeplearning.net/software/theano/install_ubuntu.html))
 * Install [Lasagne](https://github.com/Lasagne/Lasagne)
@@ -60,7 +58,7 @@ The following is a short list with good introductions to different aspects of de
   * [Python-Tutorial](http://deeplearning.net/software/theano/tutorial/python.html) and [Numpy refresher](http://deeplearning.net/software/theano/tutorial/numpy.html) from the Theano website
 * **Hint:** You can install Python, Theano etc. on you local desktop machine and log into it via SSH or via [IPython Notebook](http://cs231n.github.io/ipython-tutorial/) during class
 
-
+**Slides:** [pdf](https://github.com/nreimers/deeplearning4nlp-tutorial/raw/master/2015-10_Lecture/Lecture2/2015-10-12_Theano_Introduction.pdf)
 
 ## Lecture 3 - Word Embeddings and Deep Feed Forward Networks
 *Monday, 19th October, 11am (German time zone), Room B002*
