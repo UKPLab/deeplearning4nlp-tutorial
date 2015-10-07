@@ -58,19 +58,40 @@ The following is a short list with good introductions to different aspects of de
   * [Python-Tutorial](http://deeplearning.net/software/theano/tutorial/python.html) and [Numpy refresher](http://deeplearning.net/software/theano/tutorial/numpy.html) from the Theano website
 * **Hint:** You can install Python, Theano etc. on you local desktop machine and log into it via SSH or via [IPython Notebook](http://cs231n.github.io/ipython-tutorial/) during class
 
+**Slides:** [pdf](https://github.com/nreimers/deeplearning4nlp-tutorial/raw/master/2015-10_Lecture/Lecture2/2015-10-12_Theano_Introduction.pdf)
 
-**Lecture-Content:**
-* Introduction to Theano (knowledge of Python and Numpy is assumed)
-* Computation graphs
-* Using Theano to classify hand written digits (MNIST dataset)
-* Usage of Lasagne
-
-
-## Lecture 3 - Word Embeddings, Feed Forward Networks and SENNA
+## Lecture 3 - Word Embeddings and Deep Feed Forward Networks
 *Monday, 19th October, 11am (German time zone), Room B002*
 
+**Preparation before class:**
+* Know the theory of word embeddings & word2vec
+* Watch from the [CS224d Stanford Class](http://cs224d.stanford.edu/syllabus.html) the following videos:
+  * [Lecture 2](https://www.youtube.com/watch?v=T8tQZChniMk)
+    * 00:00 - 21:30 - Introduction to word vectors via SVD 
+    * 21:30 - 28:00 - Hacks for word vector learning 
+    * 28:00 - 01:01:00- Problems with SVD, Introduction to word2vec (please watch at least this part)
+      * From minute 38 to 53 he derives the optimization function of word2vec, feel free to skip this part
+    * 1:01:00 - 1:13:00 - LSA vs. Skip-Gram vs. CBOW. Introduction of Glove 
+  * [Lecture 3](https://www.youtube.com/watch?v=T1j2Q9_FgTM) 
+    * 00:00 - 13:00 - How is word2vec trained, how are the word embeddings updated (please watch at least this part)
+    * 13:00 - 20:00 - What is Skip-Gram, Negative Sampeling, CBOW (please watch at least this part)
+    * 20:00 - 28:00 - How to evaluate word embeddings 
+    * 28:00 - 36:00 - How to improve the quality of word embeddings 
+    * 36:00 - 38:00 - Intrinsic evaluation of word embeddings
+    * 38:00 - 41:00 - How to deal with ambiguous words? 
+    * 41:00 - 42:00 - Intrinsic evaluation of word embeddings 
+    * 42:00 - 50:45 - Using word embeddings and softmax for classification
+    * 55:00 - 1:08:00 - Should word embeddings be updated during classification? 
+* The theory will **not** be introduced in class. But if you have questions regarding the theory / the videos, please ask them. We will discuss your questions / the videos in the beginning of Lecture 3 
+* Get familiar with Theano and Lasagne, do the exercises from Lecture 2
+ 
+**Lecture content:**
+* Discussion of the theory of word2vec (have your questions prepared :))
+* Usage of word2vec & word2vec hacks
+* Designing a deep neural network architecture for sequence tagging (e.g. POS, NER, Chunking)
+
 **Practice-Task**:
-* **Task**: Implement a Named Entity Recognizer based on the SENNA Architecture
+* **Task**: Implement a Named Entity Recognizer
 * *A Python skeleton and a sample solution will be added to this git repository later*
 
 ## Lecture 4
