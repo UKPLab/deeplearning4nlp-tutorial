@@ -60,6 +60,8 @@ The following is a short list with good introductions to different aspects of de
 
 **Slides:** [pdf](https://github.com/nreimers/deeplearning4nlp-tutorial/raw/master/2015-10_Lecture/Lecture2/2015-10-12_Theano_Introduction.pdf)
 
+**Code:** [/Lecture2/code](https://github.com/nreimers/deeplearning4nlp-tutorial/tree/master/2015-10_Lecture/Lecture2/code)
+
 ## Lecture 3 - Word Embeddings and Deep Feed Forward Networks
 *Monday, 19th October, 11am (German time zone), Room B002*
 
