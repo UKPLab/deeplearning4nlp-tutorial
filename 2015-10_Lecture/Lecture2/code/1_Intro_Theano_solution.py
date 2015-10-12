@@ -17,17 +17,22 @@
 # - Use the theano.function() to compile your computation graph
 # 
 
-# In[13]:
+# In[8]:
 
 import theano
 import theano.tensor as T
 
-#Put your code here
+x = T.dscalar('x') #First input variable to the compute graph
+y = T.dscalar('y') #Second input variable to the compute graph
+z = 3*x + x*y + 3*y #Our formula we like to compute
+
+#Compile for the output z, given the inputs x and y
+f = theano.function(inputs=[x,y], outputs=z)
 
 
 # Now you can invoke f and pass the input values, i.e. f(1,1), f(10,-3) and the result for this operation is returned.
 
-# In[17]:
+# In[9]:
 
 print f(1,1)
 print f(10,-3)
@@ -41,7 +46,7 @@ print f(10,-3)
 # 
 # **To print the graph, futher libraries must be installed. In 99% of your development time you don't need the graph printing function. Feel free to skip this section**
 
-# In[18]:
+# In[10]:
 
 #Graph for z
 theano.printing.pydotprint(z, outfile="pics/z_graph.png", var_with_name_simple=True)  
@@ -82,18 +87,25 @@ theano.printing.pydotprint(f, outfile="pics/f_graph.png", var_with_name_simple=T
 # 
 # $n$ input dimension and $k$ output dimension
 
-# In[44]:
+# In[11]:
 
 import theano
 import theano.tensor as T
 import numpy as np
 
-# Put your code here
+x = T.fvector('x')
+W = T.fmatrix('W')
+b = T.fvector('b')
+
+activation = T.dot(x,W)+b
+z = T.tanh(activation)
+
+f = theano.function(inputs=[x,W,b], outputs=[activation,z])
 
 
 # Next we define some NumPy-Array with data and let Theano compute the result for $f(x,W,b)$
 
-# In[46]:
+# In[12]:
 
 inputX = np.asarray([0.1, 0.2, 0.3], dtype='float32')
 inputW = np.asarray([[0.1,-0.2],[-0.4,0.5],[0.6,-0.7]], dtype='float32')
@@ -118,7 +130,7 @@ f(inputX, inputW, inputB)
 # - Shared variables improve performance, as you need less transfer between your Python code and the execution of the compute graph (which is written & compiled from C code)
 # - Shared variables can also be store on your graphic card
 
-# In[1]:
+# In[13]:
 
 import theano
 import theano.tensor as T
@@ -154,11 +166,11 @@ print accumulator()
 #     - The computed gradient is then used in the same call to update the shared weights
 #     - Training just becomes: *for mini_batch in mini_batches: train(mini_batch)*
 
-# In[113]:
+# In[14]:
 
 #New accumulator function, now with an update
-
-# Put your code here to update the internal counter
+inc = T.lscalar('inc')
+accumulator = theano.function(inputs=[inc], outputs=(state,z), givens={x: state}, updates=[(state,state+inc)])
 
 print accumulator(1)
 print accumulator(1)
