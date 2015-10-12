@@ -1,7 +1,7 @@
 # Deep Learning for NLP - Lecture October 2015
 **This site can be access by the URL: www.deeplearning4nlp.com**
 
-
+**>> The video & code solutions for the 2. lecture is available <<**
 
 This GIT repository accompanies the [UKP](https://www.ukp.tu-darmstadt.de/ukp-home/) lecture on Deep Learning for Natural Language Processing.
 
@@ -61,6 +61,8 @@ The following is a short list with good introductions to different aspects of de
 
 **Code:** [/Lecture2/code](https://github.com/nreimers/deeplearning4nlp-tutorial/tree/master/2015-10_Lecture/Lecture2/code)
 * The code uses Python 2.7. With Python 3, you might need to change the syntax accordingly
+
+**Video:** https://youtu.be/BCwBl_55n7s
 
 ## Lecture 3 - Word Embeddings and Deep Feed Forward Networks
 *Monday, 19th October, 11am (German time zone), Room B002*
