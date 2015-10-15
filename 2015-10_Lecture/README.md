@@ -97,7 +97,7 @@ The following is a short list with good introductions to different aspects of de
 
 **Practice-Task**:
 * **Task**: Implement a Named Entity Recognizer
-* *A Python skeleton and a sample solution will be added to this git repository later*
+* *See Lecture3/code for the training data, word embeddings and a code skeleton*
 
 ## Lecture 4
 *Monday, 26th October, 11am (German time zone), Room B002*
