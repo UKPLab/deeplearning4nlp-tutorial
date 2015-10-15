@@ -1,8 +1,7 @@
 # Deep Learning for NLP - Lecture October 2015
 **This site can be access by the URL: www.deeplearning4nlp.com**
 
-**>> Link for 1. lecture: https://youtu.be/AmG4jzmBZ88 <<**
-
+**>> The video & code solutions for the 2. lecture is available <<**
 
 This GIT repository accompanies the [UKP](https://www.ukp.tu-darmstadt.de/ukp-home/) lecture on Deep Learning for Natural Language Processing.
 
@@ -61,6 +60,9 @@ The following is a short list with good introductions to different aspects of de
 **Slides:** [pdf](https://github.com/nreimers/deeplearning4nlp-tutorial/raw/master/2015-10_Lecture/Lecture2/2015-10-12_Theano_Introduction.pdf)
 
 **Code:** [/Lecture2/code](https://github.com/nreimers/deeplearning4nlp-tutorial/tree/master/2015-10_Lecture/Lecture2/code)
+* The code uses Python 2.7. With Python 3, you might need to change the syntax accordingly
+
+**Video:** https://youtu.be/BCwBl_55n7s
 
 ## Lecture 3 - Word Embeddings and Deep Feed Forward Networks
 *Monday, 19th October, 11am (German time zone), Room B002*
@@ -71,18 +73,19 @@ The following is a short list with good introductions to different aspects of de
   * [Lecture 2](https://www.youtube.com/watch?v=T8tQZChniMk)
     * 00:00 - 21:30 - Introduction to word vectors via SVD 
     * 21:30 - 28:00 - Hacks for word vector learning 
-    * 28:00 - 01:01:00- Problems with SVD, Introduction to word2vec (please watch at least this part)
+    * 28:00 - 01:01:00- Problems with SVD, Introduction to word2vec (**please watch at least this part**)
       * From minute 38 to 53 he derives the optimization function of word2vec, feel free to skip this part
     * 1:01:00 - 1:13:00 - LSA vs. Skip-Gram vs. CBOW. Introduction of Glove 
   * [Lecture 3](https://www.youtube.com/watch?v=T1j2Q9_FgTM) 
-    * 00:00 - 13:00 - How is word2vec trained, how are the word embeddings updated (please watch at least this part)
-    * 13:00 - 20:00 - What is Skip-Gram, Negative Sampeling, CBOW (please watch at least this part)
+    * 00:00 - 13:00 - How is word2vec trained, how are the word embeddings updated (**please watch at least this part**)
+    * 13:00 - 20:00 - What is Skip-Gram, Negative Sampeling, CBOW (**please watch at least this part**)
     * 20:00 - 28:00 - How to evaluate word embeddings 
     * 28:00 - 36:00 - How to improve the quality of word embeddings 
     * 36:00 - 38:00 - Intrinsic evaluation of word embeddings
     * 38:00 - 41:00 - How to deal with ambiguous words? 
     * 41:00 - 42:00 - Intrinsic evaluation of word embeddings 
     * 42:00 - 50:45 - Using word embeddings and softmax for classification
+    * 50:45 - 55:00 - Cross Entropy error
     * 55:00 - 1:08:00 - Should word embeddings be updated during classification? 
 * The theory will **not** be introduced in class. But if you have questions regarding the theory / the videos, please ask them. We will discuss your questions / the videos in the beginning of Lecture 3 
 * Get familiar with Theano and Lasagne, do the exercises from Lecture 2
