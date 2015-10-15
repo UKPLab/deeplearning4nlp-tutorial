@@ -27,8 +27,8 @@ You can use NER_Keras_Skeleton.py or NER_Lasagne_Skeleton.py if you like to star
 
 Most of the code deals with reading in the dataset, creating X- and Y-matrices for our neural network and evaluating the final result.
 
-BIOF1Validation.py: Provides methods to compute the F1-score on BIO encoded data
-GermEvalReader.py: Reads in the tsv-data from the GermEval task and outputs them as matrices
+- BIOF1Validation.py: Provides methods to compute the F1-score on BIO encoded data
+- GermEvalReader.py: Reads in the tsv-data from the GermEval task and outputs them as matrices
 
 # 4. Hints
 Updating the word embeddings layer takes significant time and is not necessary, as we have pre-trained word embeddings. For lasagne, you should ensure that the word embeddings are not updated, i.e. the W-matrix of the EmbeddingLayer should not be updated by Lasagne.
@@ -41,11 +41,8 @@ On my computer, the Keras implementation with a window size of 2 runs for about 
 Adding the casing information to Keras increases the runtime to about 12-14 seconds/epoch.
 
 The performance after 10 epochs is:
-Without case information:
-10 epoch: F1 on dev: 0.699177, F1 on test: 0.693651
-
-With case information:
-10 epoch: F1 on dev: 0.710590, F1 on test: 0.709284
+- Without case information: 10 epoch: F1 on dev: 0.699177, F1 on test: 0.693651 
+- With case information: 10 epoch: F1 on dev: 0.710590, F1 on test: 0.709284
 
 
 Our system for the GermEval-2014 competition achieved a score of F1=75.1%
