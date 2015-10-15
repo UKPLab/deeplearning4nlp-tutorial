@@ -42,7 +42,7 @@ Adding the casing information to Keras increases the runtime to about 12-14 seco
 
 The performance after 10 epochs is:
 Without case information:
-10 epoch: F1 on dev: 0.699177, F1 on test: 0.693651
+10 epoch: F1 on dev: 0.699177, F1 on test: 0.693651 
 
 With case information:
 10 epoch: F1 on dev: 0.710590, F1 on test: 0.709284
