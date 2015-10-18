@@ -1,7 +1,7 @@
 # Deep Learning for NLP - Lecture October 2015
 **This site can be access by the URL: www.deeplearning4nlp.com**
 
-**>> The video & code solutions for the 2. lecture is available <<**
+**>> Note: For the 3. lecture we will switch to [Keras](http://keras.io) <<**
 
 This GIT repository accompanies the [UKP](https://www.ukp.tu-darmstadt.de/ukp-home/) lecture on Deep Learning for Natural Language Processing.
 
@@ -51,7 +51,8 @@ The following is a short list with good introductions to different aspects of de
 
 **Preparation before class:**
 * Install Python (2.7), NumPy, SciPy and Theano. ([Installing Theano for Ubuntu](http://deeplearning.net/software/theano/install_ubuntu.html))
-* Install [Lasagne](https://github.com/Lasagne/Lasagne)
+* ~~Install [Lasagne](https://github.com/Lasagne/Lasagne)~~
+ * Please use [Keras](http://keras.io), its much faster than Lasagne 
 * Refresh your knowledge on Python and Numpy:
   * [Python and Numpy Tutorial](http://cs231n.github.io/python-numpy-tutorial/) 
   * [Python-Tutorial](http://deeplearning.net/software/theano/tutorial/python.html) and [Numpy refresher](http://deeplearning.net/software/theano/tutorial/numpy.html) from the Theano website
@@ -68,6 +69,7 @@ The following is a short list with good introductions to different aspects of de
 *Monday, 19th October, 11am (German time zone), Room B002*
 
 **Preparation before class:**
+* Install [Keras](http://keras.io)
 * Know the theory of word embeddings & word2vec
 * Watch from the [CS224d Stanford Class](http://cs224d.stanford.edu/syllabus.html) the following videos:
   * [Lecture 2](https://www.youtube.com/watch?v=T8tQZChniMk)
@@ -99,8 +101,12 @@ The following is a short list with good introductions to different aspects of de
 * **Task**: Implement a Named Entity Recognizer
 * *See Lecture3/code for the training data, word embeddings and a code skeleton*
 
-## Lecture 4
+## Lecture 4 - Autoencoders, Recursive Neural Networks 
 *Monday, 26th October, 11am (German time zone), Room B002*
+
+**Lecture content:**
+* Autoencoders
+* Recursive Neural Networks
 
 ## Lecture 5
 *Monday, 2nd November, 11am (German time zone), Room B002*
