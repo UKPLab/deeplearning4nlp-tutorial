@@ -21,7 +21,7 @@ The following is a short list with good introductions to different aspects of de
 * 2015, Richard Socher, [CS224d: Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/syllabus.html)
 
 ## Lecture 1 - Introduction to Deep Learning 
-*Monday, 5th October, 11am (German time zone), Room B002*
+*Monday, 5th October, 11am, Room B002*
 
 **Video:** https://youtu.be/AmG4jzmBZ88
 
@@ -47,7 +47,7 @@ The following is a short list with good introductions to different aspects of de
 
 
 ## Lecture 2 - Introduction to Theano and Lasagne 
-*Monday, 12th October, 11am (German time zone), Room B002*
+*Monday, 12th October, 11am, Room B002*
 
 **Preparation before class:**
 * Install Python (2.7), NumPy, SciPy and Theano. ([Installing Theano for Ubuntu](http://deeplearning.net/software/theano/install_ubuntu.html))
@@ -66,7 +66,7 @@ The following is a short list with good introductions to different aspects of de
 **Video:** https://youtu.be/BCwBl_55n7s
 
 ## Lecture 3 - Word Embeddings and Deep Feed Forward Networks
-*Monday, 19th October, 11am (German time zone), Room B002*
+*Monday, 19th October, 11am, Room B002*
 
 **Preparation before class:**
 * Install [Keras](http://keras.io)
@@ -102,14 +102,14 @@ The following is a short list with good introductions to different aspects of de
 * *See Lecture3/code for the training data, word embeddings and a code skeleton*
 
 ## Lecture 4 - Autoencoders, Recursive Neural Networks 
-*Monday, 26th October, 11am (German time zone), Room B002*
+*Monday, 26th October, 11am, Room B002*
 
 **Lecture content:**
 * Autoencoders
 * Recursive Neural Networks
 
 ## Lecture 5
-*Monday, 2nd November, 11am (German time zone), Room B002*
+*Monday, 2nd November, 11am, Room B002*
 
 ## Lecture 6
-*Monday, 9h November, 11am (German time zone), Room B002*
+*Monday, 9h November, 11am, Room B002*
