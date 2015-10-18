@@ -1,7 +1,7 @@
 # Deep Learning for NLP - Lecture October 2015
 **This site can be access by the URL: www.deeplearning4nlp.com**
 
-**>> Note: For the 3. lecture we will switch to [Keras](http://keras.io) <<**
+**>> Note: For the 3. lecture we will switch from Lasagne to [Keras](http://keras.io) <<**
 
 This GIT repository accompanies the [UKP](https://www.ukp.tu-darmstadt.de/ukp-home/) lecture on Deep Learning for Natural Language Processing.
 
