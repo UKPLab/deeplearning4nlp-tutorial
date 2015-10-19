@@ -94,6 +94,9 @@ The following is a short list with good introductions to different aspects of de
  
 **Slides** [pdf](https://github.com/nreimers/deeplearning4nlp-tutorial/raw/master/2015-10_Lecture/Lecture3/2015-10-19_Lecture3.pdf)
 
+**Video**: https://youtu.be/MXHyIpv6RIg
+* There are a lot of parts where I use flipcharts and neither the audio nor the video captures this. Basically I present the Collobert et al., NLP almost from scratch, approach. An illustration of this drawing can be found [here](https://www.werc.tu-darmstadt.de/fileadmin/user_upload/Group_UKP/2014-10-14_LKE_Tutorial_on_Deep_Learning.pdf) slides 41-43 (SENNA, Window Approach, Sentence Approach)
+
 **Exercises**:
  * Try different hyperparameters, e.g. window size, number of hidden units, optimization function, activation functions
  * Take the NER Keras implementation (Lecture3/code/NER_Keras.py) and extend it with a Casing feature, i.e. the information if a word is all uppercase, all lowercase or initial uppercase. Hint: Your network needs two inputs, one for the word indices, one for the chasing information. 
