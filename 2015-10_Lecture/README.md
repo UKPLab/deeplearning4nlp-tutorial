@@ -1,7 +1,6 @@
 # Deep Learning for NLP - Lecture October 2015
 **This site can be access by the URL: www.deeplearning4nlp.com**
 
-**>> Note: For the 3. lecture we will switch from Lasagne to [Keras](http://keras.io) <<**
 
 This GIT repository accompanies the [UKP](https://www.ukp.tu-darmstadt.de/ukp-home/) lecture on Deep Learning for Natural Language Processing.
 
@@ -92,14 +91,11 @@ The following is a short list with good introductions to different aspects of de
 * The theory will **not** be introduced in class. But if you have questions regarding the theory / the videos, please ask them. We will discuss your questions / the videos in the beginning of Lecture 3 
 * Get familiar with Theano and Lasagne, do the exercises from Lecture 2
  
-**Lecture content:**
-* Discussion of the theory of word2vec (have your questions prepared :))
-* Usage of word2vec & word2vec hacks
-* Designing a deep neural network architecture for sequence tagging (e.g. POS, NER, Chunking)
+**Slides** [pdf](https://github.com/nreimers/deeplearning4nlp-tutorial/raw/master/2015-10_Lecture/Lecture3/2015-10-19_Lecture3.pdf)
 
-**Practice-Task**:
-* **Task**: Implement a Named Entity Recognizer
-* *See Lecture3/code for the training data, word embeddings and a code skeleton*
+**Exercises**:
+ * Try different hyperparameters, e.g. window size, number of hidden units, optimization function, activation functions
+ * Take the NER Keras implementation (Lecture3/code/NER_Keras.py) and extend it with a Casing feature, i.e. the information if a word is all uppercase, all lowercase or initial uppercase. Hint: Your network needs two inputs, one for the word indices, one for the chasing information. 
 
 ## Lecture 4 - Autoencoders, Recursive Neural Networks 
 *Monday, 26th October, 11am, Room B002*
