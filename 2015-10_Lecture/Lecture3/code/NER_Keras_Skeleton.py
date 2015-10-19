@@ -2,10 +2,10 @@
 """
 This is a skeleton for you to implement your NER classifier.
 
-You can either choose Lasange (https://github.com/Lasagne/Lasagne) or Keras (http://keras.io)
+You can either choose Lasagne (https://github.com/Lasagne/Lasagne) or Keras (http://keras.io)
 
 
-This file is a skeleton for Keras
+This file is a skeleton for Keras. A sample solution can be found in NER_Keras.py.
 
 @author: Nils Reimers
 """
@@ -95,7 +95,7 @@ test_x, test_y = GermEvalReader.createNumpyArray(test_sentences, windowSize, wor
 
 #####################################
 #
-# Create the Lasagne Network
+# Create the Network
 #
 #####################################
 
@@ -109,12 +109,7 @@ n_out = len(label2Idx)
 
 number_of_epochs = 10
 minibatch_size = 35
-embedding_size = embeddings.shape[1]
 
-x = T.imatrix('x')  # the data, one word+context per row
-y = T.ivector('y')  # the labels are presented as 1D vector of [int] labels
-        
-        
 ##### -------> Put your model here <----------
         
 
@@ -125,7 +120,6 @@ minibatch_size = 35
 print "%d epochs" % number_of_epochs
 print "%d mini batches" % (len(train_x)/minibatch_size)
 
-#theano.printing.pydotprint(model._predict, outfile="keras.png")  
 
 for epoch in xrange(number_of_epochs):    
     start_time = time.time()

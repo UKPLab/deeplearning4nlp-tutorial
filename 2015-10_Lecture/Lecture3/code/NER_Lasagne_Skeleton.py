@@ -5,7 +5,7 @@ This is a skeleton for you to implement your NER classifier.
 You can either choose Lasange (https://github.com/Lasagne/Lasagne) or Keras (http://keras.io)
 
 
-This file is a skeleton for Lasagne
+This file is a skeleton for Lasagne. A sample solution can be found in NER_Lasagne.py.
 
 @author: Nils Reimers
 """
