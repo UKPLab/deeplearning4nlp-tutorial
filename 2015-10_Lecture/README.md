@@ -107,6 +107,8 @@ The following is a short list with good introductions to different aspects of de
 **Recommended Readings before class**:
 * Autoencoders:
  * http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
+ * http://ufldl.stanford.edu/wiki/index.php/Stacked_Autoencoders
+ * http://ufldl.stanford.edu/wiki/index.php/Fine-tuning_Stacked_AEs
 * Recursive Neural Networks:
  * [Socher et al., 2011, Semi-supervised recurisve autoencoders for predicting sentiment distributions](http://dl.acm.org/citation.cfm?id=2145450) 
  * [Socher et al., 2013, Recursive Deep Models for Semantic Compositionality over a Sentiment Treebank](http://nlp.stanford.edu/%7Esocherr/EMNLP2013_RNTN.pdf)
