@@ -104,6 +104,13 @@ The following is a short list with good introductions to different aspects of de
 ## Lecture 4 - Autoencoders, Recursive Neural Networks 
 *Monday, 26th October, 11am, Room B002*
 
+**Recommended Readings before class**:
+* Autoencoders:
+ * http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
+* Recursive Neural Networks:
+ * [Socher et al., 2011, Semi-supervised recurisve autoencoders for predicting sentiment distributions](http://dl.acm.org/citation.cfm?id=2145450) 
+ * [Socher et al., 2013, Recursive Deep Models for Semantic Compositionality over a Sentiment Treebank](http://nlp.stanford.edu/%7Esocherr/EMNLP2013_RNTN.pdf)
+
 **Lecture content:**
 * Autoencoders
 * Recursive Neural Networks
