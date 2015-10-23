@@ -113,9 +113,7 @@ The following is a short list with good introductions to different aspects of de
  * [Socher et al., 2011, Semi-supervised recurisve autoencoders for predicting sentiment distributions](http://dl.acm.org/citation.cfm?id=2145450) 
  * [Socher et al., 2013, Recursive Deep Models for Semantic Compositionality over a Sentiment Treebank](http://nlp.stanford.edu/%7Esocherr/EMNLP2013_RNTN.pdf)
 
-**Lecture content:**
-* Autoencoders
-* Recursive Neural Networks
+**Slides:** [pdf](https://github.com/nreimers/deeplearning4nlp-tutorial/blob/master/2015-10_Lecture/Lecture4/2015-10-26_Autoencoders_Recursive_NN.pdf)
 
 ## Lecture 5
 *Monday, 2nd November, 11am, Room B002*
