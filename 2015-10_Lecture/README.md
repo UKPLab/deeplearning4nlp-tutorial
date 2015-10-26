@@ -101,7 +101,7 @@ The following is a short list with good introductions to different aspects of de
  * Try different hyperparameters, e.g. window size, number of hidden units, optimization function, activation functions
  * Take the NER Keras implementation (Lecture3/code/NER_Keras.py) and extend it with a Casing feature, i.e. the information if a word is all uppercase, all lowercase or initial uppercase. Hint: Your network needs two inputs, one for the word indices, one for the chasing information. 
 
-## Lecture 4 - Autoencoders, Recursive Neural Networks 
+## Lecture 4 - Autoencoders, Recursive Neural Networks, Dropout
 *Monday, 26th October, 11am, Room B002*
 
 **Recommended Readings before class**:
@@ -117,8 +117,12 @@ The following is a short list with good introductions to different aspects of de
 
 **Exercise:** Have a look in the code directory. There you can find an example on the Brown corpus performing genre classifcation, one example on the 20 newsgroup dataset on topic classification and one example on autoencoders for the MNIST dataset.
 
-## Lecture 5
+## Lecture 5 - Convolutional Neural Networks
 *Monday, 2nd November, 11am, Room B002*
+**Recommended Readings**:
+ * [CS224d - Lecture 13](https://www.youtube.com/watch?v=EevTPpQvxiU)
+ * [Kim, 2014, Convolutional Neural Networks for Sentence Classification](http://arxiv.org/abs/1408.5882)
 
-## Lecture 6
+
+## Lecture 6 - Recurrent models and LSTM-Model
 *Monday, 9h November, 11am, Room B002*
