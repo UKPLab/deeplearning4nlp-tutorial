@@ -115,6 +115,8 @@ The following is a short list with good introductions to different aspects of de
 
 **Slides:** [pdf](https://github.com/nreimers/deeplearning4nlp-tutorial/blob/master/2015-10_Lecture/Lecture4/2015-10-26_Autoencoders_Recursive_NN.pdf)
 
+**Exercise:** Have a look in the code directory. There you can find an example on the Brown corpus performing genre classifcation, one example on the 20 newsgroup dataset on topic classification and one example on autoencoders for the MNIST dataset.
+
 ## Lecture 5
 *Monday, 2nd November, 11am, Room B002*
 
