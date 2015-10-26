@@ -119,6 +119,7 @@ The following is a short list with good introductions to different aspects of de
 
 ## Lecture 5 - Convolutional Neural Networks
 *Monday, 2nd November, 11am, Room B002*
+
 **Recommended Readings**:
  * [CS224d - Lecture 13](https://www.youtube.com/watch?v=EevTPpQvxiU)
  * [Kim, 2014, Convolutional Neural Networks for Sentence Classification](http://arxiv.org/abs/1408.5882)
