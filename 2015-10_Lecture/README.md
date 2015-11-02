@@ -128,5 +128,7 @@ The following is a short list with good introductions to different aspects of de
 
 **Slides:** [pdf](https://github.com/nreimers/deeplearning4nlp-tutorial/raw/master/2015-10_Lecture/Lecture5/2015-11-02_Convolutional_NN.pdf)
 
+**Video:** https://youtu.be/nzSPZyjGlWI
+
 ## Lecture 6 - Recurrent models and LSTM-Model
 *Monday, 9h November, 11am, Room B002*
