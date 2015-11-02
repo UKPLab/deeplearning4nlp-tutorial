@@ -122,10 +122,11 @@ The following is a short list with good introductions to different aspects of de
 ## Lecture 5 - Convolutional Neural Networks
 *Monday, 2nd November, 11am, Room B002*
 
-**Recommended Readings**:
+**Recommended Readings:**
  * [CS224d - Lecture 13](https://www.youtube.com/watch?v=EevTPpQvxiU)
  * [Kim, 2014, Convolutional Neural Networks for Sentence Classification](http://arxiv.org/abs/1408.5882)
 
+**Slides:** [pdf](https://github.com/nreimers/deeplearning4nlp-tutorial/raw/master/2015-10_Lecture/Lecture5/2015-11-02_Convolutional_NN.pdf)
 
 ## Lecture 6 - Recurrent models and LSTM-Model
 *Monday, 9h November, 11am, Room B002*
