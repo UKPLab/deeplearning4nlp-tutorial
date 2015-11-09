@@ -132,5 +132,7 @@ The following is a short list with good introductions to different aspects of de
 
 ## Lecture 6 - Recurrent models and LSTM-Model
 *Monday, 9h November, 11am, Room B002*
+
 **Slides:** [pdf](https://github.com/nreimers/deeplearning4nlp-tutorial/raw/master/2015-10_Lecture/Lecture6/2015-11-09_Recurrent.pdf)
+
 **Video:** https://youtu.be/an9x3vXQYYQ
