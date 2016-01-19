@@ -4,7 +4,7 @@
 
 This GIT repository accompanies the [UKP](https://www.ukp.tu-darmstadt.de/ukp-home/) lecture on Deep Learning for Natural Language Processing.
 
-In contrast to other lectures, this lecture focuses on the **usage of deep learning methods**. As programming infrastructure we use Python in combination with [Theano](http://deeplearning.net/software/theano/) and [Lasagne](https://github.com/Lasagne/Lasagne).
+In contrast to other lectures, this lecture focuses on the **usage of deep learning methods**. As programming infrastructure we use Python in combination with [Keras](http://keras.io) and [Lasagne](https://github.com/Lasagne/Lasagne).
 
 This lecture is structured into 6 parts. Each parts contains some recommended readings, which are supposed to be read before class. In class (video will be streamed and recorded) we will discuss the papers and provide some more background knowledge. With the start of the second lecture, each lecture will contain some practical exercise, in the most cases to implement a certain deep neural network to do a typical NLP task, for example Named Entity Recognition, Genre Classifcation of Sentiment Classification. The lecture is inspired by an engineering mindset: The beautiful math and complexity of the topic is sometimes neglected to provide instead an easy-to-understand and easy-to-use approach **to use Deep Learning for NLP tasks** (we use what works without providing a full background on every aspect).
 
