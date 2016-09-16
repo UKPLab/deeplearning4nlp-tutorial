@@ -39,7 +39,7 @@ Updating the word embeddings layer takes significant time and is not necessary, 
 # 5. Performance and Runtime
 On my computer, the Keras implementation with a window size of 2 runs for about 10.0 seconds per epoch.
 
-Adding the casing information to Keras increases the runtime to about xx seconds/epoch.
+Adding the casing information to Keras increases the runtime to about 20 seconds/epoch.
 
 The performance after 10 epochs is:
 - Without case information: 10 epoch: F1 on dev: 0.690786, F1 on test: 0.684517 

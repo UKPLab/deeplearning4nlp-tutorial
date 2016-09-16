@@ -178,12 +178,12 @@ for epoch in xrange(number_of_epochs):
     start_time = time.time()
     
     #Train for 1 epoch
-    model.fit(train_x, train_y_cat, nb_epoch=1, batch_size=minibatch_size, verbose=False, shuffle=True)   
+    model.fit([train_x, train_case_x], train_y_cat, nb_epoch=1, batch_size=minibatch_size, verbose=False, shuffle=True)   
     print "%.2f sec for training" % (time.time() - start_time)
     
   
     # Compute precision, recall, F1 on dev & test data
-    pre_dev, rec_dev, f1_dev = BIOF1Validation.compute_f1(model.predict_classes(dev_x, verbose=0), dev_y, idx2Label)
-    pre_test, rec_test, f1_test = BIOF1Validation.compute_f1(model.predict_classes(test_x, verbose=0), test_y, idx2Label)
+    pre_dev, rec_dev, f1_dev = BIOF1Validation.compute_f1(model.predict_classes([dev_x, dev_case_x], verbose=0), dev_y, idx2Label)
+    pre_test, rec_test, f1_test = BIOF1Validation.compute_f1(model.predict_classes([test_x, test_case_x], verbose=0), test_y, idx2Label)
 
     print "%d epoch: F1 on dev: %f, F1 on test: %f" % (epoch+1, f1_dev, f1_test)
