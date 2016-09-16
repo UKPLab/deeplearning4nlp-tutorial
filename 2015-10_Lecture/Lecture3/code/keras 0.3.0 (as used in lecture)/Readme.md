@@ -1,8 +1,11 @@
-# Update 16.09.2016
-The files in this folder were updated on September 16th, 2016 in order to make the code example compatible to the current Keras (1.0.x) and the current Theano (0.8.x) version. You can find the code that was used in the lecture in the folder 'keras 0.3.0 (as used in lecture)'.
+# Important update 16.09.2016
+This folder contains the original files as used in the lecture. In the lecture, Keras 0.3.0 and Theano 0.7.x was used.
+
+The files in the parent folder were updated on September 16th, 2016, to use Theano 0.8.x and Keras 1.0.x.
 
 
 # NER using the SENNA Architecture
+
 This is a simpe Named Entity Recoginizer based on the SENNA architecture as presented by Collobert and Weston in the paper 'Natural Language Processing (almost) from Scratch.
 
 We use the data from the GermEval-2014 contest (https://sites.google.com/site/germeval2014ner/data). 
@@ -26,7 +29,7 @@ After that, we can execute the CreateSubCorpus.py, which extracts from the large
 The reduced embeddings file can be found in at embeddings/GermEval.vocab.gz
 
 # 3. Create a NER
-You can use NER_Keras_Skeleton.py if you like to start from scratch.
+You can use NER_Keras_Skeleton.py or NER_Lasagne_Skeleton.py if you like to start from scratch.
 
 Most of the code deals with reading in the dataset, creating X- and Y-matrices for our neural network and evaluating the final result.
 
@@ -34,15 +37,17 @@ Most of the code deals with reading in the dataset, creating X- and Y-matrices f
 - GermEvalReader.py: Reads in the tsv-data from the GermEval task and outputs them as matrices
 
 # 4. Hints
-Updating the word embeddings layer takes significant time and is not necessary, as we have pre-trained word embeddings. You can disable the update of the embeddings by setting the trainable weights for this layer to an empty set.
+Updating the word embeddings layer takes significant time and is not necessary, as we have pre-trained word embeddings. For lasagne, you should ensure that the word embeddings are not updated, i.e. the W-matrix of the EmbeddingLayer should not be updated by Lasagne.
+
+For Keras we provided a FixedEmbedding implementation (KerasLayer/FixedEmbedding.py). The embedding matrix of this layer will *not* be updated during training time.
 
 # 5. Performance and Runtime
-On my computer, the Keras implementation with a window size of 2 runs for about 10.0 seconds per epoch.
+On my computer, the Keras implementation with a window size of 2 runs for about 9.5 seconds per epoch, the Lasagne implementation for about 29.5 seconds per epoch.
 
-Adding the casing information to Keras increases the runtime to about xx seconds/epoch.
+Adding the casing information to Keras increases the runtime to about 12-14 seconds/epoch.
 
 The performance after 10 epochs is:
-- Without case information: 10 epoch: F1 on dev: 0.690786, F1 on test: 0.684517 
+- Without case information: 10 epoch: F1 on dev: 0.699177, F1 on test: 0.693651 
 - With case information: 10 epoch: F1 on dev: 0.710590, F1 on test: 0.709284
 
 
