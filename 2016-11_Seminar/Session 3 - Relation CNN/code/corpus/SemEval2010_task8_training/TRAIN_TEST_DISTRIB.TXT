@@ -1,0 +1,65 @@
+
+<<<Distribution for the TRIAL examples>>>
+TOTAL : 891
+               Other :   280 (31.43%)
+        Cause-Effect :   156 (17.51%)
+    Product-Producer :   114 (12.79%)
+       Entity-Origin :   102 (11.45%)
+   Instrument-Agency :    85 ( 9.54%)
+     Component-Whole :    71 ( 7.97%)
+   Content-Container :    57 ( 6.40%)
+  Entity-Destination :    13 ( 1.46%)
+   Member-Collection :     8 ( 0.90%)
+       Message-Topic :     5 ( 0.56%)
+
+<<<Distribution for the NEW examples>>>
+TOTAL : 9826
+               Other :  1584 (16.12%)
+     Component-Whole :  1182 (12.03%)
+        Cause-Effect :  1175 (11.96%)
+  Entity-Destination :  1124 (11.44%)
+   Member-Collection :   915 ( 9.31%)
+       Message-Topic :   890 ( 9.06%)
+       Entity-Origin :   872 ( 8.87%)
+    Product-Producer :   834 ( 8.49%)
+   Content-Container :   675 ( 6.87%)
+   Instrument-Agency :   575 ( 5.85%)
+
+<<<Distribution for ALL examples>>>
+TOTAL : 10717
+               Other :  1864 (17.39%)
+        Cause-Effect :  1331 (12.42%)
+     Component-Whole :  1253 (11.69%)
+  Entity-Destination :  1137 (10.61%)
+       Entity-Origin :   974 ( 9.09%)
+    Product-Producer :   948 ( 8.85%)
+   Member-Collection :   923 ( 8.61%)
+       Message-Topic :   895 ( 8.35%)
+   Content-Container :   732 ( 6.83%)
+   Instrument-Agency :   660 ( 6.16%)
+
+<<<Distribution for TRAINING examples>>>
+TOTAL : 8000
+               Other :  1410 (17.63%)
+        Cause-Effect :  1003 (12.54%)
+     Component-Whole :   941 (11.76%)
+  Entity-Destination :   845 (10.56%)
+    Product-Producer :   717 ( 8.96%)
+       Entity-Origin :   716 ( 8.95%)
+   Member-Collection :   690 ( 8.63%)
+       Message-Topic :   634 ( 7.92%)
+   Content-Container :   540 ( 6.75%)
+   Instrument-Agency :   504 ( 6.30%)
+
+<<<Distribution for TEST examples>>>
+TOTAL : 2717
+               Other :   454 (16.71%)
+        Cause-Effect :   328 (12.07%)
+     Component-Whole :   312 (11.48%)
+  Entity-Destination :   292 (10.75%)
+       Message-Topic :   261 ( 9.61%)
+       Entity-Origin :   258 ( 9.50%)
+   Member-Collection :   233 ( 8.58%)
+    Product-Producer :   231 ( 8.50%)
+   Content-Container :   192 ( 7.07%)
+   Instrument-Agency :   156 ( 5.74%)

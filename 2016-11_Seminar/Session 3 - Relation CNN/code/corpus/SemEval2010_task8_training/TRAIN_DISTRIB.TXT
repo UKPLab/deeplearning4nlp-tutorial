@@ -1,0 +1,40 @@
+<<<Distribution for TRAINING examples - ALL >>>
+TOTAL : 8000
+               Other :  1410 (17.63%)
+        Cause-Effect :  1003 (12.54%)
+     Component-Whole :   941 (11.76%)
+  Entity-Destination :   845 (10.56%)
+    Product-Producer :   717 ( 8.96%)
+       Entity-Origin :   716 ( 8.95%)
+   Member-Collection :   690 ( 8.63%)
+       Message-Topic :   634 ( 7.92%)
+   Content-Container :   540 ( 6.75%)
+   Instrument-Agency :   504 ( 6.30%)
+
+
+<<<Distribution for TRAINING examples - without the last 891 (which are from the TRIAL dataset) >>>
+TOTAL : 7109
+               Other :  1130 (14.13%)
+     Component-Whole :   870 (10.88%)
+        Cause-Effect :   847 (10.59%)
+  Entity-Destination :   832 (10.40%)
+   Member-Collection :   682 ( 8.53%)
+       Message-Topic :   629 ( 7.86%)
+       Entity-Origin :   614 ( 7.67%)
+    Product-Producer :   603 ( 7.54%)
+   Content-Container :   483 ( 6.04%)
+   Instrument-Agency :   419 ( 5.24%)
+
+
+<<<Distribution for the TRIAL examples only (the last 891 of the training data -- see the README file) >>>
+TOTAL : 891
+               Other :   280 (31.43%)
+        Cause-Effect :   156 (17.51%)
+    Product-Producer :   114 (12.79%)
+       Entity-Origin :   102 (11.45%)
+   Instrument-Agency :    85 ( 9.54%)
+     Component-Whole :    71 ( 7.97%)
+   Content-Container :    57 ( 6.40%)
+  Entity-Destination :    13 ( 1.46%)
+   Member-Collection :     8 ( 0.90%)
+       Message-Topic :     5 ( 0.56%)
