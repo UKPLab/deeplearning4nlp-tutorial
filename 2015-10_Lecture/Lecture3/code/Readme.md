@@ -3,7 +3,7 @@ The files in this folder were updated on September 16th, 2016 in order to make t
 
 
 # NER using the SENNA Architecture
-This is a simpe Named Entity Recoginizer based on the SENNA architecture as presented by Collobert and Weston in the paper 'Natural Language Processing (almost) from Scratch.
+This is a simple Named Entity Recoginizer based on the SENNA architecture as presented by Collobert and Weston in the paper 'Natural Language Processing (almost) from Scratch.
 
 We use the data from the GermEval-2014 contest (https://sites.google.com/site/germeval2014ner/data). 
 
