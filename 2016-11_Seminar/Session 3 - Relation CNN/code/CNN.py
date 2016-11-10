@@ -5,11 +5,15 @@ Daojian Zeng, Kang Liu, Siwei Lai, Guangyou Zhou and Jun Zhao, 2014, Relation Cl
 
 Performance (without hyperparameter optimization):
 Accuracy: 0.7943
-Non-other Macro-Averaged F1:  0.7612
+Macro-Averaged F1 (without Other relation):  0.7612
+
+Performance Zeng et al.
+Macro-Averaged F1 (without Other relation): 0.789
+
 
 Code was tested with:
 - Theano 0.8.2
-- Keras 1.1.0
+- Keras 1.1.1
 - Python 2.7
 """
 import theano
@@ -23,8 +27,7 @@ from keras.preprocessing import sequence
 from keras.models import Sequential
 from keras.layers.core import Dense, Dropout, Activation, Flatten, Merge
 from keras.layers.embeddings import Embedding
-from keras.layers.convolutional import Convolution1D, MaxPooling1D, GlobalMaxPooling1D
-
+from keras.layers import Convolution1D, MaxPooling1D, GlobalMaxPooling1D
 
 from keras.utils import np_utils
 
@@ -38,7 +41,7 @@ nb_epoch = 100
 position_dims = 50
 
 print "Load dataset"
-f = gzip.open('pkl/sem-relations.pkl', 'rb')
+f = gzip.open('pkl/sem-relations.pkl.gz', 'rb')
 yTrain, sentenceTrain, positionTrain1, positionTrain2 = pkl.load(f)
 yTest, sentenceTest, positionTest1, positionTest2  = pkl.load(f)
 f.close()
@@ -61,7 +64,7 @@ print "positionTest1: ", positionTest1.shape
 print "yTest: ", yTest.shape
 
 
-f = gzip.open('pkl/embeddings.pkl', 'rb')
+f = gzip.open('pkl/embeddings.pkl.gz', 'rb')
 embeddings = pkl.load(f)
 f.close()
 
