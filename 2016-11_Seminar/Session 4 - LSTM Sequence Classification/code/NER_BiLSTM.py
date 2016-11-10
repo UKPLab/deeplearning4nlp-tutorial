@@ -19,7 +19,7 @@ Test-Data: Prec: 0.795, Rec: 0.738, F1: 0.766
 Code was written & tested with:
 - Python 2.7
 - Theano 0.8.2
-- Keras 1.1.0
+- Keras 1.1.1
 
 
 @author: Nils Reimers
@@ -32,8 +32,9 @@ import random
 
 import time
 import gzip
+import cPickle as pkl
 
-import GermEvalReader
+
 import BIOF1Validation
 
 import keras
@@ -49,68 +50,22 @@ from docutils.languages.af import labels
 
 
 
-trainFile = '../../Session 1 - SENNA/code/data/NER-de-train.tsv'
-devFile = '../../Session 1 - SENNA/code/data/NER-de-dev.tsv'
-testFile = '../../Session 1 - SENNA/code/data/NER-de-test.tsv'
+f = gzip.open('pkl/embeddings.pkl.gz', 'rb')
+embeddings = pkl.load(f)
+f.close()
 
+label2Idx = embeddings['label2Idx']
+wordEmbeddings = embeddings['wordEmbeddings']
+caseEmbeddings = embeddings['caseEmbeddings']
 
-
-print "NER with Keras, float: %s" % (theano.config.floatX)
-
-
-#####################
-#
-# Read in the vocab
-#
-#####################
-print "Read in the vocab"
-vocabPath =  '../../Session 1 - SENNA/code/embeddings/GermEval.vocab.gz'
-
-word2Idx = {} #Maps a word to the index in the embeddings matrix
-embeddings = [] #Embeddings matrix
-
-with gzip.open(vocabPath, 'r') as fIn:
-    idx = 0               
-    for line in fIn:
-        split = line.strip().split(' ')                
-        embeddings.append(np.array([float(num) for num in split[1:]]))
-        word2Idx[split[0]] = idx
-        idx += 1
-        
-embeddings = np.asarray(embeddings, dtype='float32')
-embedding_size = embeddings.shape[1]
-
-
-        
-# Create a mapping for our labels
-label2Idx = {'O':0}
-idx = 1
-
-for bioTag in ['B-', 'I-']:
-    for nerClass in ['PER', 'LOC', 'ORG', 'OTH']:
-        for subtype in ['', 'deriv', 'part']:
-            label2Idx[bioTag+nerClass+subtype] = idx 
-            idx += 1
-            
 #Inverse label mapping
 idx2Label = {v: k for k, v in label2Idx.items()}
 
-
-#Casing matrix
-caseLookup = {'numeric': 0, 'allLower':1, 'allUpper':2, 'initialUpper':3, 'other':4, 'mainly_numeric':5, 'contains_digit': 6, 'PADDING':7}
-caseMatrix = np.identity(len(caseLookup), dtype=theano.config.floatX)
-            
-     
-# Read in data   
-print "Read in data and create matrices"    
-train_sentences = GermEvalReader.readFile(trainFile)
-dev_sentences = GermEvalReader.readFile(devFile)
-test_sentences = GermEvalReader.readFile(testFile)
-
-# Create numpy arrays
-train_data= GermEvalReader.createDataset(train_sentences, word2Idx, label2Idx, caseLookup)
-dev_data = GermEvalReader.createDataset(dev_sentences, word2Idx, label2Idx, caseLookup)
-test_data = GermEvalReader.createDataset(test_sentences, word2Idx, label2Idx, caseLookup)
+f = gzip.open('pkl/data.pkl.gz', 'rb')
+train_data = pkl.load(f)
+dev_data = pkl.load(f)
+test_data = pkl.load(f)
+f.close()
 
 
 
@@ -120,18 +75,12 @@ test_data = GermEvalReader.createDataset(test_sentences, word2Idx, label2Idx, ca
 #
 #####################################
 
-
 n_out = len(label2Idx)
-caseMatrix = np.identity(len(caseLookup), dtype=theano.config.floatX)
-
-        
-print "Embeddings shape: ",embeddings.shape
-
 tokens = Sequential()
-tokens.add(Embedding(input_dim=embeddings.shape[0], output_dim=embeddings.shape[1],  weights=[embeddings], trainable=False))
+tokens.add(Embedding(input_dim=wordEmbeddings.shape[0], output_dim=wordEmbeddings.shape[1],  weights=[wordEmbeddings], trainable=False))
 
 casing = Sequential()
-casing.add(Embedding(output_dim=caseMatrix.shape[1], input_dim=caseMatrix.shape[0], weights=[caseMatrix], trainable=False)) 
+casing.add(Embedding(output_dim=caseEmbeddings.shape[1], input_dim=caseEmbeddings.shape[0], weights=[caseEmbeddings], trainable=False)) 
   
 model = Sequential();
 model.add(Merge([tokens, casing], mode='concat'))  
