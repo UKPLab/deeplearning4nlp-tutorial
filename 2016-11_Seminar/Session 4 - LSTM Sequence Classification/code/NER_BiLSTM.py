@@ -84,12 +84,12 @@ casing.add(Embedding(output_dim=caseEmbeddings.shape[1], input_dim=caseEmbedding
   
 model = Sequential();
 model.add(Merge([tokens, casing], mode='concat'))  
-model.add(Bidirectional(LSTM(100, return_sequences=True, dropout_W=0.2))) 
-model.add(TimeDistributedDense(n_out, activation='softmax'))
+model.add(Bidirectional(LSTM(10, return_sequences=True, dropout_W=0.2))) 
+model.add(TimeDistributed(Dense(n_out, activation='softmax')))
 
 sgd = SGD(lr=0.1, decay=1e-7, momentum=0.0, nesterov=False, clipvalue=3) 
 rmsprop = RMSprop(clipvalue=3) 
-model.compile(loss='categorical_crossentropy', optimizer=sgd)
+model.compile(loss='sparse_categorical_crossentropy', optimizer=sgd)
 
 model.summary()
 
@@ -104,9 +104,10 @@ def iterate_minibatches(dataset, startIdx, endIdx):
     endIdx = min(len(dataset), endIdx)
     
     for idx in xrange(startIdx, endIdx):
-        tokens, casing, labels = dataset[idx]             
-        labels = np_utils.to_categorical(labels, n_out)  
-        yield np.asarray([labels]), np.asarray([tokens]), np.asarray([casing])
+        tokens, casing, labels = dataset[idx]        
+            
+        labels = np.expand_dims([labels], -1)     
+        yield labels, np.asarray([tokens]), np.asarray([casing])
 
 
 def tag_dataset(dataset):
