@@ -70,44 +70,11 @@ f.close()
 
 print "Embeddings: ",embeddings.shape
 
-distanceModel1 = Sequential()
-distanceModel1.add(Embedding(max_position, position_dims, input_length=positionTrain1.shape[1]))
-
-distanceModel2 = Sequential()
-distanceModel2.add(Embedding(max_position, position_dims, input_length=positionTrain2.shape[1]))
-
-wordModel = Sequential()
-wordModel.add(Embedding(embeddings.shape[0], embeddings.shape[1], input_length=sentenceTrain.shape[1], weights=[embeddings], trainable=False))
 
 
-convModel = Sequential()
-convModel.add(Merge([wordModel, distanceModel1, distanceModel2], mode='concat'))
-
-
-convModel.add(Convolution1D(nb_filter=nb_filter,
-                        filter_length=filter_length,
-                        border_mode='same',
-                        activation='tanh',
-                        subsample_length=1))
-# we use standard max over time pooling
-convModel.add(GlobalMaxPooling1D())
-
-
-model = convModel
-
-#model.add(Dropout(0.25))
-#model.add(Dense(hidden_dims,  activation='tanh', W_regularizer=keras.regularizers.l2(0.01)))
-model.add(Dropout(0.5))
-
-
-model.add(Dense(n_out, activation='softmax'))
-
-
-model.compile(loss='categorical_crossentropy',optimizer='Adam', metrics=['accuracy'])
-
-model.summary()
-print "Start training"
-
+#
+# ::::::: Put your network here ::::::
+#
 
 
 max_prec, max_rec, max_acc, max_f1 = 0,0,0,0
@@ -134,7 +101,7 @@ for epoch in xrange(nb_epoch):
     pred_test = model.predict_classes([sentenceTest, positionTest1, positionTest2], verbose=False)
     
     dctLabels = np.sum(pred_test)
-    totalDCTLabels = np.sum(yTest)
+    totalDCTLabels = np.sum(yTest)       
    
     acc =  np.sum(pred_test == yTest) / float(len(yTest))
     max_acc = max(max_acc, acc)

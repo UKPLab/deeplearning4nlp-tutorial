@@ -68,15 +68,13 @@ f.close()
 #####################################
 
 
+
+
 # Create the train and predict_labels function
 n_in = train_tokens.shape[1]
 n_hidden = numHiddenUnits
 n_out = len(label2Idx)
 
-
-x = T.imatrix('x')  # the data, one word+context per row
-y = T.ivector('y')  # the labels are presented as 1D vector of [int] labels
-        
 
 words = Sequential()
 words.add(Embedding(output_dim=wordEmbeddings.shape[1], input_dim=wordEmbeddings.shape[0], input_length=n_in,  weights=[wordEmbeddings], trainable=False))       
@@ -96,16 +94,16 @@ model.add(Dense(output_dim=n_out, activation='softmax'))
 # Use Adam optimizer
 model.compile(loss='categorical_crossentropy', optimizer='adam')
 
+# Train_y is a 1-dimensional vector containing the index of the label
+# With np_utils.to_categorical we map it to a 1 hot matrix
+train_y_cat = np_utils.to_categorical(train_y, n_out)
 
 
 print train_tokens.shape[0], ' train samples'
 print train_tokens.shape[1], ' train dimension'
 print test_tokens.shape[0], ' test samples'
 
-# Train_y is a 1-dimensional vector containing the index of the label
-# With np_utils.to_categorical we map it to a 1 hot matrix
-train_y_cat = np_utils.to_categorical(train_y, n_out)
-dev_y_cat = np_utils.to_categorical(dev_y, n_out)
+
 
 ##################################
 #
