@@ -25,8 +25,7 @@ Code was written & tested with:
 @author: Nils Reimers
 """
 import numpy as np
-import theano
-import theano.tensor as T
+
 import random
 
 
