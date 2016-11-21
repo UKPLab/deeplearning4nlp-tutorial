@@ -44,8 +44,6 @@ Our labels (y_train) are a 1-dimensional vector containing the binary label for 
 
 
 import numpy as np
-from hgext.graphlog import revset
-from twisted.positioning.test import test_sentence
 np.random.seed(1337)  # for reproducibility
 
 from keras.preprocessing import sequence

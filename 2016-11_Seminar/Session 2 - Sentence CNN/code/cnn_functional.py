@@ -10,8 +10,6 @@ It implements roughly the network proposed by Kim et al., Convolutional Neural N
 with several filter lengths. 
 """
 import numpy as np
-from hgext.graphlog import revset
-from twisted.positioning.test import test_sentence
 np.random.seed(1337)  # for reproducibility
 
 from keras.preprocessing import sequence
