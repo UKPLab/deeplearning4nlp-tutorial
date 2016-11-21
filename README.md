@@ -12,8 +12,8 @@ In November 2016 I gave a seminar at the University of Duisburg-Essen. The slide
 4. Long-Short-Term-Memory (LSTM)-Networks for Sequence Classificaiton 
 
 
-# Deep Learning for NLP - Lecture - Nov. 2015
-In November 2015 I gave a lecture for the UKP Department at the Technical University of Darmstadt. The lecture is structured in six parts and covers the basics about deep learning. In the lecture I use Python 2.7, Theano 0.6.0 and Keras 0.3.0 to model different applications of deep learning for NLP. The slides, the source code, and video recordings are available in the folder **[2016-10_Lecture](2016-10_Lecture/)**.
+# Deep Learning for NLP - Lecture - Oct. 2015
+In October 2015 I gave a lecture for the UKP Department at the Technical University of Darmstadt. The lecture is structured in six parts and covers the basics about deep learning. In the lecture I use Python 2.7, Theano 0.6.0 and Keras 0.3.0 to model different applications of deep learning for NLP. The slides, the source code, and video recordings are available in the folder **[2015-10_Lecture](2015-10_Lecture/)**.
 
 
 ## Contact
