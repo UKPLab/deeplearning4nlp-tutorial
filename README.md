@@ -1,19 +1,22 @@
 # Deep Learning for NLP - Tutorial
 Hands-on tutorial on deep learning with a special focus on Natural Language Processing (NLP).
 
->This GIT repository accompanies the UKP lecture on Deep Learning for Natural Language Processing.
-In contrast to other lectures, this lecture focuses on the usage of deep learning methods. 
-As programming infrastructure we use Python in combination with Keras and Lasagne.
-This lecture is structured into 6 parts. Each parts contains some recommended readings, 
-which are supposed to be read before class. In class (video will be streamed and recorded) we 
-will discuss the papers and provide some more background knowledge. With the start of the second lecture, 
-each lecture will contain some practical exercise, in the most cases to implement a certain deep neural
-network to do a typical NLP task, for example Named Entity Recognition, Genre Classifcation of Sentiment 
-Classification. The lecture is inspired by an engineering mindset: The beautiful math and complexity of 
-the topic is sometimes neglected to provide instead an easy-to-understand and easy-to-use approach to 
-use Deep Learning for NLP tasks (we use what works without providing a full background on every aspect).
-At the end of the lecture you should be able to understand the most important aspect of deep learning 
-for NLP and be able to programm and train your own deep neural networks.
+This GIT repository accompanies the UKP lectures and seminars on Deep Learning for Natural Language Processing. In contrast to other tutorials, this tutorial focuses on the usage of deep learning methods. 
+
+# Deep Learning for NLP - Seminar - Nov. 2016
+In November 2016 I gave a seminar at the University of Duisburg-Essen. The slides as well as the source code is available in the folder **[2016-11_Seminar](2016-11_Seminar/)**. In the seminar I use Python 2.7, Theano 0.8.2, and Keras 1.1.1 to model four different deep learning models for NLP:
+
+1. Feed Forward Architecture for Sequence Classification (e.g. POS, NER, Chunking)
+2. Convolutional Neural Network for Sentence / Text Classification (e.g. sentiment classification)
+3. Convolutional Neural Network for Relation Extraction (e.g. semantic relation extration)
+4. Long-Short-Term-Memory (LSTM)-Networks for Sequence Classificaiton 
+
+
+# Deep Learning for NLP - Lecture - Oct. 2015
+In October 2015 I gave a lecture for the UKP Department at the Technical University of Darmstadt. The lecture is structured in six parts and covers the basics about deep learning. In the lecture I use Python 2.7, Theano 0.6.0 and Keras 0.3.0 to model different applications of deep learning for NLP. The slides, the source code, and video recordings are available in the folder **[2015-10_Lecture](2015-10_Lecture/)**.
+
+
+## Contact
 
 Contact person: Nils Reimers, reimers@ukp.informatik.tu-darmstadt.de
 
