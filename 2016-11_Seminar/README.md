@@ -5,6 +5,7 @@ This GIT repository accompanies the [UKP](https://www.ukp.tu-darmstadt.de/ukp-ho
 In contrast to other seminars, this seminar focuses on the **usage of deep learning methods**. As programming infrastructure we use Python in combination with [Theano](http://deeplearning.net/software/theano/) and [Keras](https://keras.io). The published code uses Python 2.7, Theano 0.8.2 and Keras 1.1.1. You should ensure that you have the frameworks installed in the right version (note: they change quickly).
 
 This seminar is structured into 4 sessions:
+
 1. Feed-Forward Networks for Sequence Classification (e.g. POS, NER, Chunking)
 2. Convolutional Neural Network for Sentence / Text Classification (e.g. sentiment classification)
 3. Convolutional Neural Network for Relation Extraction (e.g. semantic relation extration)
