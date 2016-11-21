@@ -21,9 +21,6 @@ Code was written & tested with:
 
 """
 import numpy as np
-import theano
-import theano.tensor as T
-
 
 import time
 import gzip
