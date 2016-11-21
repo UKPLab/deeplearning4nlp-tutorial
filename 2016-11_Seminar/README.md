@@ -17,3 +17,30 @@ At the end of the seminar you should be able to understand the most important as
 
 In case of questions, feel free to approach [Nils Reimers](https://www.ukp.tu-darmstadt.de/people/doctoral-researchers/nils-reimers/).
 
+## Recommended Readings on Deep Learning
+The following is a short list with good introductions to different aspects of deep learning.
+* 2009, Yoshua Bengio, [Learning Deep Architectures for AI by Yoshua Bengio](http://www.iro.umontreal.ca/~bengioy/papers/ftml_book.p)
+* 2013, Richard Socher and Christopher Manning, [Deep Learning for Natural Language Processing (slides and recording from NAACL 2013)](http://nlp.stanford.edu/courses/NAACL2013/)
+* 2015, Yoshua Bengio et al., [Deep Learning - MIT Press book in preparation](http://www.iro.umontreal.ca/~bengioy/dlbook/)
+* 2015, Richard Socher, [CS224d: Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/syllabus.html)
+* 2015, Yoav Goldberg, [A Primer on Neural Network Models for Natural Language Processing](http://u.cs.biu.ac.il/~yogo/nnlp.pdf)
+
+## Theory 1 - Introduction to Deep Learning 
+**Slides:** [pdf](https://github.com/UKPLab/deeplearning4nlp-tutorial/raw/master/2016-11_Seminar/1_Theory_Introduction.pdf)
+
+## Theory 2 - Introduction to Deep Learning Frameworks
+**Slides:** [pdf](https://github.com/UKPLab/deeplearning4nlp-tutorial/raw/master/2016-11_Seminar/2_Theory_Frameworks.pdf)
+
+## Code Session 1 - SENNA Architecture for Sequence Classification
+
+## Theory 3 - Introduction to Convolutional Neural Networks
+**Slides:** [pdf](https://github.com/UKPLab/deeplearning4nlp-tutorial/raw/master/2016-11_Seminar/3_Theory_Convolutional_NN.pdf)
+
+## Code Session 2 - Convolutional Neural Networks for Text Classification
+
+## Code Session 3 - Convolutional Neural Networks for Relation Extraction
+
+## Theory 4 - Introduction to LSTM
+**Slides:** [pdf](https://github.com/UKPLab/deeplearning4nlp-tutorial/raw/master/2016-11_Seminar/4_Theory_Recurrent Neural Networks.pdf)
+
+## Code Session 4 - LSTM for Sequence Classification
