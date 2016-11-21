@@ -50,7 +50,7 @@ max_position = max(np.max(positionTrain1), np.max(positionTrain2))+1
 
 n_out = max(yTrain)+1
 train_y_cat = np_utils.to_categorical(yTrain, n_out)
-test_y_cat = np_utils.to_categorical(yTest, n_out)
+
 
 print "sentenceTrain: ", sentenceTrain.shape
 print "positionTrain1: ", positionTrain1.shape
@@ -136,8 +136,7 @@ def getPrecision(pred_test, yTest, targetLabel):
 for epoch in xrange(nb_epoch):   
     
     model.fit([sentenceTrain, positionTrain1, positionTrain2], train_y_cat, batch_size=batch_size, verbose=True,nb_epoch=1)
-    #model.fit([sentenceTest, positionTest1, positionTest2], test_y_cat, batch_size=batch_size, verbose=True,nb_epoch=1)
-    
+   
     pred_test = model.predict_classes([sentenceTest, positionTest1, positionTest2], verbose=False)
     
            
