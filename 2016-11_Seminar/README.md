@@ -33,6 +33,7 @@ The following is a short list with good introductions to different aspects of de
 
 ## Code Session 1 - SENNA Architecture for Sequence Classification
 **Slides:** [pdf](https://github.com/UKPLab/deeplearning4nlp-tutorial/raw/master/2016-11_Seminar/Session%201%20-%20SENNA/SENNA.pdf)
+
 **Code:** See folder [Session 1 - SENNA](https://github.com/UKPLab/deeplearning4nlp-tutorial/tree/master/2016-11_Seminar/Session%201%20-%20SENNA)
 
 ## Theory 3 - Introduction to Convolutional Neural Networks
@@ -40,14 +41,17 @@ The following is a short list with good introductions to different aspects of de
 
 ## Code Session 2 - Convolutional Neural Networks for Text Classification
 **Slides:** [pdf](https://github.com/UKPLab/deeplearning4nlp-tutorial/raw/master/2016-11_Seminar/Session%202%20-%20Sentence%20CNN/Sentence_CNN.pdf)
+
 **Code:** See folder [Session 2 - Sentence CNN](https://github.com/UKPLab/deeplearning4nlp-tutorial/tree/master/2016-11_Seminar/Session%202%20-%20Sentence%20CNN)
 
 ## Code Session 3 - Convolutional Neural Networks for Relation Extraction
 **Slides:** [pdf](https://github.com/UKPLab/deeplearning4nlp-tutorial/raw/master/2016-11_Seminar/Session%203%20-%20Relation%20CNN/Relation_CNN.pdf)
+
 **Code:** See folder [Session 3 - Relation CNN](https://github.com/UKPLab/deeplearning4nlp-tutorial/tree/master/2016-11_Seminar/Session%203%20-%20Relation%20CNN)
 
 ## Theory 4 - Introduction to LSTM
 **Slides:** [pdf](https://github.com/UKPLab/deeplearning4nlp-tutorial/raw/master/2016-11_Seminar/4_Theory_Recurrent Neural Networks.pdf)
+
 **Code:** See folder [Session 4 - LSTM Sequence Classification](https://github.com/UKPLab/deeplearning4nlp-tutorial/tree/master/2016-11_Seminar/Session%204%20-%20LSTM%20Sequence%20Classification)
 
 ## Code Session 4 - LSTM for Sequence Classification
