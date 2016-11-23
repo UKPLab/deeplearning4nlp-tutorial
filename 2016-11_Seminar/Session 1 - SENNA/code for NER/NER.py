@@ -70,27 +70,28 @@ f.close()
 
 # Create the train and predict_labels function
 n_in = train_tokens.shape[1]
-n_hidden = numHiddenUnits
 n_out = len(label2Idx)
 
 
 words = Sequential()
-words.add(Embedding(output_dim=wordEmbeddings.shape[1], input_dim=wordEmbeddings.shape[0], input_length=n_in,  weights=[wordEmbeddings], trainable=False))       
+words.add(Embedding(input_dim=wordEmbeddings.shape[0], output_dim=wordEmbeddings.shape[1], input_length=n_in, weights=[wordEmbeddings], trainable=False))       
 words.add(Flatten())
 
 casing = Sequential()  
-casing.add(Embedding(output_dim=caseEmbeddings.shape[1], input_dim=caseEmbeddings.shape[0], input_length=n_in, weights=[caseEmbeddings], trainable=False))     
+casing.add(Embedding(input_dim=caseEmbeddings.shape[0], output_dim=caseEmbeddings.shape[1], input_length=n_in, weights=[caseEmbeddings], trainable=False))     
 casing.add(Flatten())
 
 model = Sequential()
 model.add(Merge([words, casing], mode='concat'))
 
-model.add(Dense(output_dim=n_hidden, activation='tanh'))
+model.add(Dense(output_dim=numHiddenUnits, activation='tanh'))
 model.add(Dense(output_dim=n_out, activation='softmax'))
             
             
 # Use Adam optimizer
 model.compile(loss='categorical_crossentropy', optimizer='adam')
+
+model.summary()
 
 # Train_y is a 1-dimensional vector containing the index of the label
 # With np_utils.to_categorical we map it to a 1 hot matrix

@@ -16,7 +16,6 @@ Code was tested with:
 - Keras 1.1.1
 - Python 2.7
 """
-import theano
 import numpy as np
 np.random.seed(1337)  # for reproducibility
 
@@ -80,31 +79,23 @@ wordModel = Sequential()
 wordModel.add(Embedding(embeddings.shape[0], embeddings.shape[1], input_length=sentenceTrain.shape[1], weights=[embeddings], trainable=False))
 
 
-convModel = Sequential()
-convModel.add(Merge([wordModel, distanceModel1, distanceModel2], mode='concat'))
+model = Sequential()
+model.add(Merge([wordModel, distanceModel1, distanceModel2], mode='concat'))
 
 
-convModel.add(Convolution1D(nb_filter=nb_filter,
+model.add(Convolution1D(nb_filter=nb_filter,
                         filter_length=filter_length,
                         border_mode='same',
                         activation='tanh',
                         subsample_length=1))
 # we use standard max over time pooling
-convModel.add(GlobalMaxPooling1D())
+model.add(GlobalMaxPooling1D())
 
-
-model = convModel
-
-#model.add(Dropout(0.25))
-#model.add(Dense(hidden_dims,  activation='tanh', W_regularizer=keras.regularizers.l2(0.01)))
-model.add(Dropout(0.5))
-
-
+model.add(Dropout(0.25))
 model.add(Dense(n_out, activation='softmax'))
 
 
 model.compile(loss='categorical_crossentropy',optimizer='Adam', metrics=['accuracy'])
-
 model.summary()
 print "Start training"
 
