@@ -22,7 +22,8 @@ The following is a short list with good introductions to different aspects of de
 * 2009, Yoshua Bengio, [Learning Deep Architectures for AI by Yoshua Bengio](http://www.iro.umontreal.ca/~bengioy/papers/ftml_book.p)
 * 2013, Richard Socher and Christopher Manning, [Deep Learning for Natural Language Processing (slides and recording from NAACL 2013)](http://nlp.stanford.edu/courses/NAACL2013/)
 * 2015, Yoshua Bengio et al., [Deep Learning - MIT Press book in preparation](http://www.iro.umontreal.ca/~bengioy/dlbook/)
-* 2015, Richard Socher, [CS224d: Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/syllabus.html)
+* [CS224d: Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/syllabus.html)
+ * [2016 videos](https://www.youtube.com/watch?v=kZteabVD8sU&index=1&list=PLCJlDcMjVoEdtem5GaohTC1o9HTTFtK7_)
 * 2015, Yoav Goldberg, [A Primer on Neural Network Models for Natural Language Processing](http://u.cs.biu.ac.il/~yogo/nnlp.pdf)
 
 ## Theory 1 - Introduction to Deep Learning 
