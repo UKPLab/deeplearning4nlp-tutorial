@@ -191,7 +191,7 @@ if not os.path.isfile(embeddingsPath):
         exit()
 
 
-
+# :: Load the pre-trained embeddings file ::
 fEmbeddings = gzip.open(embeddingsPath, "r") if embeddingsPath.endswith('.gz') else open(embeddingsPath, encoding="utf8")
 
 for line in fEmbeddings:
