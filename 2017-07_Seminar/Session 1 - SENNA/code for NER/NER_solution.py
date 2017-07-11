@@ -27,8 +27,10 @@ import gzip
 import sys
 if (sys.version_info > (3, 0)):
     import pickle as pkl
-else: #Python 2.7 imports
+else: 
+    #Python 2.7 imports
     import cPickle as pkl
+    
 
 
 import keras
