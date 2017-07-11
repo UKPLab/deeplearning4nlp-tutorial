@@ -7,7 +7,7 @@ This folder contains a dockerfile that installs a Python 3.6, Keras 2.0.5 and Te
 
 Build the docker container:
 ```
-docker build . -t dl4nlp
+docker build ./docker/dockerfile -t dl4nlp
 ```
 
 
