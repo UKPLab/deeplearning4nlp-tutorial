@@ -1,0 +1,10 @@
+# Our main dependency
+Keras==2.0.5
+
+#Other dependencies from Keras 2.0.5
+numpy==1.13.1
+PyYAML==3.12
+scipy==0.19.1
+six==1.10.0
+tensorflow==1.2.1
+#Theano==0.9.0
