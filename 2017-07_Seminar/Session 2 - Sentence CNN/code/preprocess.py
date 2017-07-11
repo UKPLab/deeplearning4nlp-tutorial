@@ -126,12 +126,12 @@ if not os.path.isfile(embeddingsPath):
 # :: Load the pre-trained embeddings file ::
 if embeddingsPath.endswith('.gz'):
     try:
-        fEmbeddings = gzip.open(embeddingsPath, "rt",  encoding="utf8")
+        fEmbeddings = gzip.open(embeddingsPath, "rt", encoding="utf8")
     except ValueError:
         # Workaround for Python 2.7 under Windows
-        fEmbeddings = gzip.open(embeddingsPath, "r",  encoding="utf8")
+        fEmbeddings = gzip.open(embeddingsPath, "r", encoding="utf8")
 else:
-    fEmbeddings = open(embeddingsPath,  encoding="utf8")
+    fEmbeddings = open(embeddingsPath, encoding="utf8")
 	
 print("Load pre-trained embeddings file")
 for line in fEmbeddings:

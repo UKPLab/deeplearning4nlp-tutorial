@@ -194,12 +194,12 @@ if not os.path.isfile(embeddingsPath):
         
 if embeddingsPath.endswith('.gz'):
     try:
-        fEmbeddings = gzip.open(embeddingsPath, "rt")
+        fEmbeddings = gzip.open(embeddingsPath, "rt", encoding="utf8")
     except ValueError:
         # Workaround for Python 2.7 under Windows
-        fEmbeddings = gzip.open(embeddingsPath, "r")
+        fEmbeddings = gzip.open(embeddingsPath, "r", encoding="utf8")
 else:
-    fEmbeddings = open(embeddingsPath)
+    fEmbeddings = open(embeddingsPath, encoding="utf8")
     
 for line in fEmbeddings:
     split = line.strip().split(" ")
