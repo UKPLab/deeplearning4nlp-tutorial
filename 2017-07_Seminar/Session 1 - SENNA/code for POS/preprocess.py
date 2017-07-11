@@ -192,8 +192,15 @@ if not os.path.isfile(embeddingsPath):
         print(embeddingsPath, "does not exist. Please provide pre-trained embeddings")
         exit()
         
-fEmbeddings = gzip.open(embeddingsPath, 'rt') if embeddingsPath.endswith('.gz') else open(embeddingsPath)
-
+if embeddingsPath.endswith('.gz'):
+    try:
+        fEmbeddings = gzip.open(embeddingsPath, "rt")
+    except ValueError:
+        # Workaround for Python 2.7 under Windows
+        fEmbeddings = gzip.open(embeddingsPath, "r")
+else:
+    fEmbeddings = open(embeddingsPath)
+    
 for line in fEmbeddings:
     split = line.strip().split(" ")
     word = split[0]
