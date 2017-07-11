@@ -191,18 +191,12 @@ if not os.path.isfile(embeddingsPath):
     else:
         print(embeddingsPath, "does not exist. Please provide pre-trained embeddings")
         exit()
-        
-if embeddingsPath.endswith('.gz'):
-    try:
-        fEmbeddings = gzip.open(embeddingsPath, "rt", encoding="utf8")
-    except ValueError:
-        # Workaround for Python 2.7 under Windows
-        fEmbeddings = gzip.open(embeddingsPath, "r", encoding="utf8")
-else:
-    fEmbeddings = open(embeddingsPath, encoding="utf8")
+     
+# :: Load the pre-trained embeddings file ::   
+fEmbeddings = gzip.open(embeddingsPath, "r") if embeddingsPath.endswith('.gz') else open(embeddingsPath, encoding="utf8")
     
 for line in fEmbeddings:
-    split = line.strip().split(" ")
+    split = line.decode("utf-8").strip().split(" ")
     word = split[0]
     
     if len(word2Idx) == 0: #Add padding+unknown
