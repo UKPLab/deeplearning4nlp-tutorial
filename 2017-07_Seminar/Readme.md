@@ -128,11 +128,9 @@ This is an implementation for relation extraction. We use the [SemEval 2010 - Ta
 
 
 ## Theory 5 - Introduction to LSTM
-**This section was not yet ported to. Please have a look at the November 2016 version**
+**Slides:** [pdf](./5_Theory_Recurrent_Neural_Networks.pdf)
 
-**Slides:** [pdf](https://github.com/UKPLab/deeplearning4nlp-tutorial/raw/master/2016-11_Seminar/4_Theory_Recurrent_Neural_Networks.pdf)
-
-**Code:** See folder [Session 4 - LSTM Sequence Classification](https://github.com/UKPLab/deeplearning4nlp-tutorial/tree/master/2016-11_Seminar/Session%204%20-%20LSTM%20Sequence%20Classification)
+**Code:** See folder [Session 4 - LSTM Sequence Classification](./Session%204%20-%20LSTM%20Sequence%20Classification)
 
 LSTMs are a powerful model and became very popular in 2015 / 2016. 
 
@@ -143,7 +141,7 @@ LSTMs are a powerful model and became very popular in 2015 / 2016.
   * [C224d Lecture 7](https://www.youtube.com/watch?v=rFVYTydGLr4)
 
 ## Code Session 4 - LSTM for Sequence Classification
-**Slides:** [pdf](https://github.com/UKPLab/deeplearning4nlp-tutorial/raw/master/2016-11_Seminar/Session%204%20-%20LSTM%20Sequence%20Classification/LSTM%20for%20Sequence%20Classification.pdf)
+**Slides:** [pdf](./Session%204%20-%20LSTM%20Sequence%20Classification/LSTM%20for%20Sequence%20Classification.pdf)
 
 The folder contains a Keras implementation to perfrom sequence classification using LSTM. We use the [GermEval 2014 dataset](https://sites.google.com/site/germeval2014ner/) for German NER. But you can adapt the code easily to any other sequence classification problem (POS, NER, Chunking etc.). Check the slides for more information.
 
