@@ -5,9 +5,9 @@ This is a simple Named Entity Recoginizer for German based on a Bi-Directional L
 We use the data from the GermEval-2014 contest (https://sites.google.com/site/germeval2014ner/data). 
 
 The code was developed and tested with:
-- Python 2.7
-- Theano 0.8.2
-- Keras 1.1.1
+- Python 2.7 & Python 3.6
+- Theano 0.9.0 and tensorflow 1.2.1
+- Keras 2.0.5
 
 # 1. Step: Word Embeddings
 A critical feature for nearly every system in NLP are good word embeddings. For English, there are three pre-trained word embeddings we can use:
@@ -27,10 +27,7 @@ After that, we can execute the CreateSubCorpus.py (Session 1-folder), which extr
 
 The reduced embeddings file can be found in at embeddings/GermEval.vocab.gz
 
-# 3.Architecture
-[Description will follow soon]
-
-# 4. Performance and Runtime
+# 3. Performance and Runtime
 Training LSTMs is quite slow, so bring some patience. 
 
 The on-optimized version achieves the following results (using Theano-Backend):
