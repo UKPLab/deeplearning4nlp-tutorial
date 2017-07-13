@@ -77,7 +77,7 @@ The following is a short list with good introductions to different aspects of de
 The first theory lesson covers the fundamentals of deep learning. 
 
 ## Theory 2 - Introduction to Word Embeddings
-**Slides:** [pdf](./3_Theory_Word_Embeddings.pdf)
+**Slides:** [pdf](./2_Theory_Word_Embeddings.pdf)
 
 ## Theory 3 - Introduction to Deep Learning Frameworks
 **Slides:** [pdf](./3_Theory_Frameworks.pdf)
