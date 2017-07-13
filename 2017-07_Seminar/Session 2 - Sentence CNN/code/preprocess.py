@@ -118,7 +118,7 @@ if not os.path.isfile(embeddingsPath):
     basename = os.path.basename(embeddingsPath)
     if basename == 'wiki_extvec.gz':
 	       print("Start downloading word embeddings for English using wget ...")
-	       #os.system("wget https://www.cs.york.ac.uk/nlp/extvec/"+basename+" -P embeddings/")
+	       #os.system("wget https://www.cs.york.ac.uk/nlp/extvec/"+basename+" -P embeddings/") #Original path from York University
 	       os.system("wget https://public.ukp.informatik.tu-darmstadt.de/reimers/2017_english_embeddings/"+basename+" -P embeddings/")
     else:
         print(embeddingsPath, "does not exist. Please provide pre-trained embeddings")
