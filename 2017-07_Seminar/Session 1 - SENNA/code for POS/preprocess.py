@@ -25,6 +25,7 @@ if (sys.version_info > (3, 0)):
     import pickle as pkl
 else: #Python 2.7 imports
     import cPickle as pkl
+    from io import open
 
 #We download English word embeddings from here https://www.cs.york.ac.uk/nlp/extvec/
 embeddingsPath = 'embeddings/wiki_extvec.gz'
