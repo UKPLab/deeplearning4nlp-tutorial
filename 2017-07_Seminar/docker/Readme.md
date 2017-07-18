@@ -7,7 +7,7 @@ This folder contains a dockerfile that installs a Python 3.6, Keras 2.0.5 and Te
 
 Build the docker container:
 ```
-docker build ./docker/dockerfile -t dl4nlp
+docker build ./docker/ -t dl4nlp
 ```
 
 
@@ -15,4 +15,9 @@ Run the container and mount the current folder ${PWD} into the container:
 ```
 docker run -it -v ${PWD}:/usr/src/app dl4nlp bash
 ```
+After that, you can run the commands in the container
 
+```
+cd "Session 1 - SENNA/code for POS"
+python preprocess.py
+```
