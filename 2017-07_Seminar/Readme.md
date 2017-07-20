@@ -132,6 +132,8 @@ This is an implementation for relation extraction. We use the [SemEval 2010 - Ta
 
 **Code:** See folder [Session 4 - LSTM Sequence Classification](./Session%204%20-%20LSTM%20Sequence%20Classification)
 
+**Note:** An extended version of this LSTM architecture for sequence tagging can be found in the [BiLSTM-CNN-CRF](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/) repository.
+
 LSTMs are a powerful model and became very popular in 2015 / 2016. 
 
 **Recommended Readings:**
