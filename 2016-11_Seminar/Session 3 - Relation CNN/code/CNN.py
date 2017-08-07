@@ -133,7 +133,7 @@ for epoch in xrange(nb_epoch):
 
     f1Sum = 0
     f1Count = 0
-    for targetLabel in xrange(1, max(yTest)):        
+    for targetLabel in xrange(1, max(yTest)+1):        
         prec = getPrecision(pred_test, yTest, targetLabel)
         rec = getPrecision(yTest, pred_test, targetLabel)
         f1 = 0 if (prec+rec) == 0 else 2*prec*rec/(prec+rec)
